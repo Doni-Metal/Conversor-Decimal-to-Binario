@@ -8,11 +8,29 @@
 </head>
 <body>
   <main>
-    <h2>Convierte de Decimal a Binario</h2>
-    <p>Introduce un numero Decimal:</p>
-    <input type="number" name="decimal" id="decimal-input">
-    <button id="btnDec">Convierte</button>
-    <p id="result">Binario :</p>
+    <div class="decimal-binario">
+      <h2>Convierte de Decimal a Binario</h2>
+      <p>Introduce un numero Decimal:</p>
+      <input type="number" name="decimal" id="decimal-input">
+      <button id="btnDec">Convierte</button>
+      <p id="decToBinP">Binario:</p>
+    </div>
+    <div class="binario-decimal">
+      <h2>Convierte de Binario a Decimal</h2>
+      <p>Introduce un numero Binario:</p>
+      <input type="number" name="binario" id="binario-input">
+      <button id="btnBin">Convierte</button>
+      <p id="binToDecP">Decimal:</p>
+    </div>
+    <div class="suma-binario">
+      <h2>Suma 2 Numeros Binarios</h2>
+      <p>Introduce el primer numero Binario:</p>
+      <input type="number" name="suma" id="sumaA-input">
+      <p>Introduce el segundo numero Binario:</p>
+      <input type="number" name="suma" id="sumaB-input">
+      <button id="btnSum">Suma</button>
+      <p id="sumBinP">Resultado:</p>
+    </div>
   </main>
   <script src="./index.js"></script>
 </body>
