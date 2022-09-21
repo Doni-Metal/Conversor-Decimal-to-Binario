@@ -106,16 +106,15 @@ function sumBinarios(a, b) {
   let result = [];
   let carry = 0;
   for (i = sizeA - 1; i >= 0; i--) {
-    console.log(i)
-    debugger
     let nA = numA[i];
     let nB = numB[i];
     if (carry === 1 && nA === 1 && nB === 1) {
       result.unshift(1);
-      carry --;
     } else if (nA === 1 && nB === 1) {
       result.unshift(0);
       carry ++;
+    } else if (nA + nB === 1 && carry === 1) {
+      result.unshift(0);
     } else if (carry === 1) {
       result.unshift((nA + nB) + carry);
       carry --;
